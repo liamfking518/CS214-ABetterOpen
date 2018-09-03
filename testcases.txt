@@ -1,0 +1,4 @@
+Workload E:
+For this workload, we decided to test the funcionality of the pointers returned by mymalloc(). The test starts by creating char* array of size 150. Then a while loop iterates through the array, mallocing one byte, storing the pointer in the array, and then assignning a character value to the address the pointer points to. Then another while loops iterates through the array freeing each of the pointers. We chose this workload to ensure that the pointers our mymalloc() function returns are actually functional.
+Workload F:
+Our second workload tests increasing sizes of mallocs. This test consists of a single while loop that mallocs increasing sizes of memory, starting at 1 byte and going up to 300 bytes, and then immediately frees each pointer. This test was included to check increasing sizes of mallocs that our mymalloc() function can handle without failing.
